@@ -13,3 +13,12 @@ Cada script puede ejecutarse de forma independiente o integrarse en un flujo com
 
 > Requiere los paquetes: **`rvest`**, **`tidyverse`** y **`stringr`**.  
 > Compatible con R >= 4.1.
+
+
+### Información del curso
+
+- **Curso**: Evidencia para la Gestión Pública / M´pdulo Datos no estructurados para la Gestión Pública
+- **Semestre**: Primer semestre, 2025  
+- **Profesor**: Daniel Alcatruz Inostroza  
+- **Horario de clases**: Martes y jueves, de 09:40 a 10:50  
+- **Dudas/contacto**: [daniel.alcatruz@imfd.cl](mailto:daniel.alcatruz@imfd.cl)
