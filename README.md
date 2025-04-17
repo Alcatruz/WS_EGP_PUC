@@ -17,7 +17,7 @@ Cada script puede ejecutarse de forma independiente o integrarse en un flujo com
 
 ### Información del curso
 
-- **Curso**: Evidencia para la Gestión Pública / M´pdulo Datos no estructurados para la Gestión Pública
+- **Curso**: Evidencia para la Gestión Pública / Módulo Datos no estructurados para la Gestión Pública
 - **Semestre**: Primer semestre, 2025  
 - **Profesor**: Daniel Alcatruz Inostroza  
 - **Horario de clases**: Martes y jueves, de 09:40 a 10:50  
