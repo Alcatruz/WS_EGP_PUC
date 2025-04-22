@@ -9,9 +9,14 @@
 # Asegurarse de tener columna vacía
 noticias$cuerpo <- NA_character_
 
+
 # Recorrer fila por fila
 for (i in 1:nrow(noticias)) {
   print(paste("Procesando cuerpo de noticia", i, "de", nrow(noticias)))
   noticias$cuerpo[i] <- obtener_cuerpo_noticia(noticias$link[i])
 }
 
+
+
+
+write_rds(noticias, "noticias_crimen.rds")

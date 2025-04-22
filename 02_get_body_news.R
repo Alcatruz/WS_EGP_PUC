@@ -7,6 +7,7 @@
 # los concatena en un único string, y devuelve el texto.
 # Si algo falla, devuelve NA silenciosamente.
 
+
 obtener_cuerpo_noticia <- function(url) {
   tryCatch({
     pagina <- read_html(url)
@@ -24,9 +25,13 @@ obtener_cuerpo_noticia <- function(url) {
 
 # aplicamos nuestra funcion
 
+noticias$titulo
+
 noticias <- noticias %>%
   rowwise() %>%
   mutate(cuerpo = obtener_cuerpo_noticia(link)) %>%
   ungroup()
+
+noticias$cuerpo[1]
 
 
