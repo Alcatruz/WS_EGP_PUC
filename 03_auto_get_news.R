@@ -10,7 +10,7 @@
 library(tidyverse)
 library(rvest)
 
-ultima_pagina <- 30
+ultima_pagina <- 70
 
 noticias <- data.frame()
 

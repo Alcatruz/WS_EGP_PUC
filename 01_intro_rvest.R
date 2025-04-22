@@ -1,7 +1,7 @@
 
 
 
-# --- BLOQUE 1: EXTRAER MANUALMENTE ELEMENTOS DE UNA PÁGINA DE RESULTADOS CNN CHILE ---
+# EXTRAER MANUALMENTE ELEMENTOS DE UNA PÁGINA DE RESULTADOS CNN CHILE ---
 # Este bloque lee una página del buscador y extrae paso a paso:
 # - los títulos de noticias
 # - los links
@@ -20,9 +20,16 @@ pagina <- read_html(url)
 articulos <- html_nodes(pagina, "article")
 
 titulos <- html_nodes(articulos, "h2 a") %>% html_text2()
+titulos
+
 links   <- html_nodes(articulos, "h2 a") %>% html_attr("href")
+links
+
 bajadas <- html_nodes(articulos, "p a") %>% html_text2()
+bajadas
+
 fechas  <- html_nodes(articulos, "h4") %>% html_text2()
+fechas
 
 # Combinar en tibble
 noticias <- tibble(
