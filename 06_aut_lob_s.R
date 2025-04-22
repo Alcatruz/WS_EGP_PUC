@@ -79,6 +79,7 @@ ggplot(conteo_mensual, aes(x = ym, y = n, color = categoria)) +
   geom_point(size = 2) +
   scale_x_date(date_labels = "%Y-%m", date_breaks = "1 month") +
   scale_y_continuous(limits = c(0,80))+
+  scale_color_manual(values = c("noticia" = "steelblue", "lobby" = "purple")) +
   labs(title = "Cantidad de textos por mes y categoría",
        x = "Fecha (Año-Mes)",
        y = "Cantidad de registros",
