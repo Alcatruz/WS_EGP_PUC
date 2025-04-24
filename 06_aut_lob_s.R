@@ -71,8 +71,6 @@ conteo_mensual <- texto_unificado %>%
   ) %>%
   count(categoria, ym)  # conteo por categoría y mes
 
-
-
 library(ggplot2)
 ggplot(conteo_mensual, aes(x = ym, y = n, color = categoria)) +
   geom_line(size = 1) +

@@ -27,3 +27,10 @@ obtain_audiencias_senate <- function(last_url){
 
 audiencias_senado_2014 <- obtain_audiencias_senate("https://www.senado.cl/appsenado/index.php?mo=lobby&ac=GetReuniones&anho=2014")
 audiencias_senado_2014
+
+
+
+
+
+
+
