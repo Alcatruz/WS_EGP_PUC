@@ -1,5 +1,8 @@
 
+
+
 lobby_dips <- readRDS("~/work/2020_w/BD_PA/lobby_dips.rds")
+
 lobby_dips <- readRDS("lobby_dips.rds")
 
 
@@ -84,17 +87,20 @@ lobby_df_words <- lobby_df_words %>%
 
 library(stringr)
 
-lobby_dips <- lobby_dips %>%
+lobby_df <- lobby_df %>%
   mutate(ed_has = if_else(
     str_detect(materia, "educacion|simce|psu|colegio|slep"),
     "1", "0"
   ))
 
 
-lobby_dips <- lobby_dips %>%
+lobby_df <- lobby_df %>%
   mutate(ed_has = if_else(
     str_detect(materia, "educacion|simce|psu|colegio|slep"),
     "Educación", "Otro"
   ))
+
+
+
 
 

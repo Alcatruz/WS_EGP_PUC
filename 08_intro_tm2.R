@@ -1,6 +1,22 @@
 
 
-
+# usaremos quanteda
+# 1. Crear un corpus con quanteda a partir del texto procesado
+# Un corpus es la estructura base que contiene los textos y sus metadatos
+# 2. Tokenizar los textos del corpus
+# Se divide cada texto en unidades básicas (tokens), como palabras individuales,
+# eliminando números, puntuación y URLs
+# 3. Eliminar palabras vacías (stopwords)
+# Se eliminan palabras muy comunes que no aportan significado (como "el", "la", "de")
+# 4. Crear una matriz documento-término (DFM)
+# La DFM es una tabla que cuenta cuántas veces aparece cada palabra (término)
+# en cada documento (audiencia de lobby)
+# 5. Calcular TF-IDF a partir de la DFM
+# TF-IDF pondera las palabras frecuentes en cada documento y les resta peso si aparecen en muchos documentos
+# Esto ayuda a identificar palabras distintivas
+# 6. Visualizar las palabras más relevantes por grupo (usando TF-IDF)
+# Se extraen las 15 palabras con mayor frecuencia ponderada (TF-IDF) para cada grupo definido
+# por una variable llamada `pos_pol` (posición política)
 
 
 
@@ -57,6 +73,12 @@ lobby_dfm_tfidf %>%
   labs(x = "", y = "TF-IDF", color = NULL, fill = NULL) +
   theme(legend.position = "none",
         strip.text = element_text(face = "bold"))
+
+
+
+
+
+
 
 
 
